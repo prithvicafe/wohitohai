@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Document</title>
+
+<script type="text/javascript">
+
+function validate(){
+
+var color=document.myform.color.value;
+
+if(color==""){
+
+alert("Please select a color");
+
+document.myform.color.focus();
+
+return false;
+
+}
+
+else{
+
+alert("Validation is successful");
+
+return true;
+
+}
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<form name="myform" action="" method="post" onsubmit="return validate()">
+
+<select name="color">
+
+<option value="">Select a color</option>
+
+<option value="blue">Blue</option>
+
+<option value="green">Green</option>
+
+<option value="red">Red</option>
+
+</select>
+
+<input type="submit" value="submit">
+
+</form>
+
+</body>
+
+</html>
